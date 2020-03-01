@@ -1,0 +1,56 @@
+body {
+    background-color: #222930;
+}
+
+.fix {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.comment-block {
+    color: #222930;
+}
+
+.navbar-expend-lg {
+    color: #222930;
+}
+
+.card {
+    background: rgba(27, 27, 27, 0.25);
+    margin: 10%;
+}
+
+.Error {
+    color: red;
+}
+
+.card-body {
+    position: center;
+}
+
+.btn-success {
+    color: #222930;
+    margin-left: 33%;
+    background-color: white;
+}
+
+.p {
+    color: white;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.text-center {
+    color: white;
+    font-size: 2rem;
+}
+
+#sign {
+    color: blue;
+    margin-left: 35%;
+}
+
+.nav-item {
+    color: white;
+}

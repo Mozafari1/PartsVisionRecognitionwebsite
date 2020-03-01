@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .forward,
+.slides-navigation .back {
+    width: 43px;
+    height: 43px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation .forward {
+    left: 8px;
+    /* background-image: url(../icons/forward.png); */
+}
+
+.slides-navigation .back {
+    right: -8px;
+    /* background-image: url(../icons/back.png); */
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    height: 325px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.partner {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.line {
+    width: 18%;
+    margin-bottom: 30px;
+    margin-top: -14px;
+}
+
+.tronrud-eng {
+    margin-left: 20%;
+}
+
+.about-tronrud {
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.partner {
+    text-align: center;
+}
+
+.chart {
+    width: 100%;
+}
+
+.about-gant {
+    text-align: center;
+    margin-bottom: -50px;
+    color: #222930;
+}
+
+.usn {
+    margin-left: 25%;
+}
+
+.about-usn {
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.newline {
+    width: 56%;
+    background-color: white;
+}
+
+.iconusn {
+    height: 27px;
+}
+
+.title .heading p {
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.title .heading .main {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px #222930;
+    font-weight: bold;
+}
+
+.title .heading .sub {
+    font-size: 25px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.im {
+    max-width: 100%;
+    border-radius: 10px;
+    border-color: #222930;
+}
+
+.aboutText {
+    font-size: 20px;
+}
+
+.spa {
+    font-size: 30px;
+    height: 30px;
+    width: 300px;
+    letter-spacing: 4px;
+}
+
+.pres {
+    text-align: center;
+}
+
+.bach {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.timeline {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+#cont {
+    width: 50%;
+    padding: 10px 30px;
+    position: relative;
+}
+
+#cont:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    right: -10px;
+    border: 4px solid #c12728;
+    z-index: 14;
+    top: 20px;
+}
+
+.content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 7px;
+    color: #222930;
+}
+
+.content:hover {
+    -webkit-transform: scale(1.01, 1.01);
+    -moz-transform: scale(1.01, 1.01);
+    -o-transform: scale(1.01, 1.01);
+    -ms-transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.01);
+}
+
+.innercontent:hover {
+    -webkit-transform: scale(1.04, 1.04);
+    -moz-transform: scale(1.04, 1.04);
+    -o-transform: scale(1.04, 1.04);
+    -ms-transform: scale(1.04, 1.04);
+    transform: scale(1.04, 1.04);
+}
+
+.left {
+    left: 0;
+    animation: 0.2s;
+}
+
+.right {
+    left: 50%;
+    animation: 0.4s;
+}
+
+.right:after {
+    left: -10px;
+}
+
+.copyrightSection {
+    background-color: #222930;
+    color: white;
+    padding: 30px 5px;
+}
+
+.copyrightSection p {
+    margin: 0;
+}
+
+
+/* traingle */
+
+.left:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 10px;
+    top: 22px;
+}
+
+.right:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: 10px;
+    top: 22px;
+}
+
+
+/* media */
+
+@media (max-width: 800px) {
+    .timeline:after {
+        left: 20px;
+    }
+    #cont {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+    #cont:after {
+        left: 3px;
+    }
+    .right {
+        left: 0;
+    }
+    .left:before,
+    .right:before {
+        border-right: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        left: 50px;
+        top: 22px;
+    }
+}
+
+.contactB {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.contactB:hover {
+    text-decoration: none;
+    color: #487eb0;
+    background-color: white;
+    border: #95a5a6;
+}
+
+.timeline #cont:nth-child(1) {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+}
+
+.timeline #cont:nth-child(2) {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    -ms-animation-delay: 0.4s;
+}
+
+.timeline #cont:nth-child(3) {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -ms-animation-delay: 0.8s;
+}
+
+.timeline #cont:nth-child(4) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+}
+
+.timeline #cont:nth-child(5) {
+    animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+}
+
+.h2ps {
+    font-size: 16px;
+}
+
+.h2p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.contactSection,
+.experience {
+    background-color: #222930;
+    color: #fff;
+}
+
+.icon {
+    background-color: white;
+    width: 30px;
+}
+
+#navigation {
+    background-color: #222930;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+    margin-top: -3rem;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    color: white;
+    /* background-image: url(../icons/menu.png); */
+}
+
+.timeline {
+    margin-top: 30px;
+}
+
+.navbar-flat a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #f7f8f8;
+    -webkit-transition: all 0.3s ease-in, 1s;
+    -moz-transition: all 0.3s ease-in, 1s;
+    -o-transition: all 0.3s ease-in, 1s;
+    -ms-transition: all 0.3s ease-in, 1s;
+    transition: all 0.3s ease-in, 1s;
+}
+
+.navbar-flat li a:hover {
+    background: #c12728;
+    color: white;
+}
+
+.navbar-flat li.active a {
+    background: #c12728;
+    color: white;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
+}
+
+#profil {
+    text-align: center;
+}
+
+.profil-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.navn {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.linje {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: normal;
+    font-size: large;
+}
+
+.position-profil {
+    margin-right: 65px;
+    margin-left: 70px;
+    margin-top: 2%;
+}
+
+.experience {
+    margin-bottom: 7%;
+}
+
+.nav-link {
+    font-size: small;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #222930;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-size: small;
+}
+
+.navbar-brand {
+    font-size: small;
+}
